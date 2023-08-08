@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container flex align-middle p-2 justify-between">
+        <div class="card-one flex items-center gap-2">
+          <div class="menu cursor-pointer md:hidden">
+            <img src="images/icon-menu.svg" alt="menu" />
+          </div>
+          <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <!-- responsive menu -->
+        <nav
+          class="absolute left-0 top-0 bg-white w-3/6 h-full p-4 hidden md:relative"
+        >
+          <span class="x block my-4 cursor-pointer md:hidden">
+            <img src="images/icon-close.svg" alt="close" />
+          </span>
+          <ul
+            class="space-y-2 text-Verydarkblue font-bold md:flex md:items-center"
+          >
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="card-two flex items-center gap-2">
+          <div class="cart cursor-pointer">
+            <img src="images/icon-cart.svg" alt="cart" />
+            <div class="details-card hidden"></div>
+          </div>
+          <div class="profile-pic">
+            <img src="images/image-avatar.png" alt="avatar" class="w-9" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 
+  
+  
+  
+  
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
