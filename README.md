@@ -1,1 +1,0 @@
-# frontendmentor_challenge

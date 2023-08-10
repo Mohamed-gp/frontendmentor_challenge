@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container flex items-center justify-between p-5 border-b">
+        <div class="card-one flex items-center gap-x-7">
+          <div class="menu block cursor-pointer md:hidden">
+            <img src="images/icon-menu.svg" alt="menu" />
+          </div>
+          <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <nav>
+            <ul class="list hidden gap-x-3 md:flex z-10">
+              <div class="x cursor-pointer mb-8 md:hidden">
+                <img src="images/icon-close.svg" alt="x" />
+              </div>
+              <li><a href="">Collections</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="card-two flex items-center gap-x-7">
+          <div class="cart cursor-pointer">
+            <img src="images/icon-cart.svg" alt="cart" />
+          </div>
+          <div class="avatar w-8">
+            <img src="images/image-avatar.png" alt="avatar" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container text-red flex mt-4 gap-x-16 p-10 items-center">
+        <div class="card-one flex flex-col gap-y-3 w-3/4">
+          <div class="show-image">
+            <img
+              src="images/image-product-1.jpg"
+              alt="show image"
+              class="rounded-lg cursor-pointer"
+            />
+          </div>
+          <div class="show-images flex gap-x-3">
+            <div class="one">
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt="thumb-one"
+                class="rounded-lg cursor-pointer"
+              />
+            </div>
+            <div class="two">
+              <img
+                src="images/image-product-2-thumbnail.jpg"
+                alt="thumb-two"
+                class="rounded-lg cursor-pointer"
+              />
+            </div>
+            <div class="three">
+              <img
+                src="images/image-product-3-thumbnail.jpg  "
+                alt="thumb-three"
+                class="rounded-lg cursor-pointer"
+              />
+            </div>
+            <div class="four">
+              <img
+                src="images/image-product-4-thumbnail.jpg"
+                alt="thumb-four"
+                class="rounded-lg cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-two">
+          <p class="company-name text-orange-600 font-bold text-xl">
+            Sneaker Company
+          </p>
+          <p class="two text-Verydarkblue font-bold text-4xl my-6">
+            Fall Limited Edition Sneakers
+          </p>
+          <p class="three text-Darkgrayishblue text-lg mb-5">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <p
+            class="new-price text-4xl text-Verydarkblue font-bold relative mb-5"
+          >
+            $125.00
+            <span class="promotion text-Orange text-lg absolute top-2/4"
+              >50%</span
+            >
+          </p>
+          <p
+            class="old-price line-through text-Darkgrayishblue text-xl font-bold mb-8"
+          >
+            $250.00
+          </p>
+          <div class="result flex items-center">
+            <div
+              class="edit flex items-center py-4 w-1/3 bg-slate-400 rounded-lg relative mr-5"
+            >
+              <img
+                src="images/icon-minus.svg"
+                alt="minus"
+                class="absolute left-4 cursor-pointer"
+              />
+              <p class="number mx-auto">0</p>
+              <img
+                src="images/icon-plus.svg"
+                alt="plus"
+                class="absolute right-4 cursor-pointer"
+              />
+            </div>
+            <div
+              class="add-cart flex items-center bg-slate-600 py-4 w-2/3 rounded-lg justify-center gap-3"
+            >
+              <img src="images/icon-cart.svg" alt="cart" />
+              Add to cart
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="JS/main.js"></script>
+    <script src="JS/config.js"></script>
+  </body>
+</html>
